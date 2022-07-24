@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{230BE3DE-353B-43AC-8B19-050F777C130C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminS.Designer.cs">
+      <DependentUpon>AdminS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_page.Designer.cs">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_reg.Designer.cs">
+      <DependentUpon>Admin_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aedit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aedit.Designer.cs">
+      <DependentUpon>Aedit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apage.Designer.cs">
+      <DependentUpon>Apage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aReg.cs" />
+    <Compile Include="Ashowcs.cs" />
+    <Compile Include="Customer1.cs" />
+    <Compile Include="Customer_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_add.Designer.cs">
+      <DependentUpon>Customer_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Details_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Details_Delete.Designer.cs">
+      <DependentUpon>Customer_Details_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Details_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Details_Update.Designer.cs">
+      <DependentUpon>Customer_Details_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gshow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gshow.Designer.cs">
+      <DependentUpon>Gshow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guide Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guide Delete.Designer.cs">
+      <DependentUpon>Guide Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideAdd.Designer.cs">
+      <DependentUpon>GuideAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideS.cs" />
+    <Compile Include="InformationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationUpdate.Designer.cs">
+      <DependentUpon>InformationUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_A.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_A.Designer.cs">
+      <DependentUpon>login_A.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login_M.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login_M.Designer.cs">
+      <DependentUpon>login_M.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Page.Designer.cs">
+      <DependentUpon>Manager Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager page1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager page1.Designer.cs">
+      <DependentUpon>Manager page1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerS.Designer.cs">
+      <DependentUpon>ManagerS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_reg.Designer.cs">
+      <DependentUpon>Manager_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medit.Designer.cs">
+      <DependentUpon>Medit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mReg.cs" />
+    <Compile Include="Mshow.cs" />
+    <Compile Include="PackShow.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTRATIONam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTRATIONam.Designer.cs">
+      <DependentUpon>REGISTRATIONam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_guide.Designer.cs">
+      <DependentUpon>Tour_guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_package_add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_package_add.Designer.cs">
+      <DependentUpon>Tour_package_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tour_package_show.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tour_package_show.Designer.cs">
+      <DependentUpon>Tour_package_show.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TP_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP_Delete.Designer.cs">
+      <DependentUpon>TP_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TP_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TP_Update.Designer.cs">
+      <DependentUpon>TP_Update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminS.resx">
+      <DependentUpon>AdminS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_page.resx">
+      <DependentUpon>Admin_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_reg.resx">
+      <DependentUpon>Admin_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Aedit.resx">
+      <DependentUpon>Aedit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apage.resx">
+      <DependentUpon>Apage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_add.resx">
+      <DependentUpon>Customer_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Details_Delete.resx">
+      <DependentUpon>Customer_Details_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Details_Update.resx">
+      <DependentUpon>Customer_Details_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gshow.resx">
+      <DependentUpon>Gshow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide Delete.resx">
+      <DependentUpon>Guide Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideAdd.resx">
+      <DependentUpon>GuideAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformationUpdate.resx">
+      <DependentUpon>InformationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_A.resx">
+      <DependentUpon>login_A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login_M.resx">
+      <DependentUpon>login_M.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Page.resx">
+      <DependentUpon>Manager Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager page1.resx">
+      <DependentUpon>Manager page1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerS.resx">
+      <DependentUpon>ManagerS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_reg.resx">
+      <DependentUpon>Manager_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medit.resx">
+      <DependentUpon>Medit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="REGISTRATIONam.resx">
+      <DependentUpon>REGISTRATIONam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_guide.resx">
+      <DependentUpon>Tour_guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_package_add.resx">
+      <DependentUpon>Tour_package_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tour_package_show.resx">
+      <DependentUpon>Tour_package_show.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP_Delete.resx">
+      <DependentUpon>TP_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TP_Update.resx">
+      <DependentUpon>TP_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\89bc6323d250ae62a2ee3615bad97073.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ae8e92b44241d7486697097b053b78e6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
